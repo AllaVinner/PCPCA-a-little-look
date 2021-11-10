@@ -4,27 +4,16 @@ __pycache__/
 cached_models/
 .DS_Store
 
-# Paper figures (large)
-figures/
-plots/
-
-experiments/realworld/*.py
-experiments/simulation/pcpca_fellowship_figure.py
-
 # Data
 *.ipynb
 *.npy
 *.csv
-*.JPEG
 *.log
 *.tsv
 *.mtx
 *.xlsx
 *.zip
-# *.png
-*.pdf
-data/mhealth/README.txt
-!data/toy/*.csv
+
 
 # Distribution / packaging
 .Python
@@ -44,8 +33,3 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
-
-!plots/simulated/
-plots/simulated/*
-!plots/simulated/toydata.png
-!plots/simulated/toydata_W.png
