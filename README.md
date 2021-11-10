@@ -2,6 +2,9 @@
 ## - A short look at the PCPCA dimension reduction tool
 
 
+<p align="center">
+  <img src="./media/pca_and_pcpca_projections.jpeg" width="500">
+</p>
 
 
 
