@@ -1,6 +1,17 @@
 # Project to seperate
 ## - A short look at the PCPCA dimension reduction tool
 
+PCA is a great tool for dimension reduction, but there are situations where it dosen't quit do the trick. 
+Withouth opening the can of worms that are named *non-linear*, we have the scenario where we want to distinguise two set of groups wehre the variance between the groups are orthogonal to the variance in the overall population (we will see what that means in a secound). The paper [] introduces a linear method called PCPCA which deals with just this case, and this is what this repository will investigate.
+
+## The data
+The group mentioned above can be any formed by any cathegorical field e.g. man vs woman, sick vs healthy, or control group vs case group; below I will refere to the groups as *case* and *control*. Then with had the thing about difference in variance. Actually it is not the difference in variance, but difference in the **direction** of the variances. Look at the data below. The overall variation of the data is long an axis going (roughfly) from the bottom left corner to the top right one, however, the difference between the two groups seem to be better explained by the other axis 
+
+
+<p align="center">
+  <img src="./media/scattered_data.jpeg" width="700">
+</p>
+
 
 <p align="center">
   <img src="./media/rotating_projection.gif" width="1000">
