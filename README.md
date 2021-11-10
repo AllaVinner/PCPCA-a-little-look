@@ -2,6 +2,9 @@
 ## - A short look at the PCPCA dimension reduction tool
 
 
+<p align="center">
+  <img src="./media/rotating_projection.gif" width="1000">
+</p>
 
 
 
