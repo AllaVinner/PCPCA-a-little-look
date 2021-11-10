@@ -3,7 +3,7 @@
 
 
 <p align="center">
-  <img src="./media/pca_and_pcpca_projections.jpeg" width="500">
+  <img src="./media/rotating_projection.gif" width="500">
 </p>
 
 
