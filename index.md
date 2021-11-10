@@ -8,6 +8,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Markdown
 
+![Something](./media/pca_and_pcpca_projections.jpeg)
 ![Something](./media/rotating_projection.gif)
 
 
