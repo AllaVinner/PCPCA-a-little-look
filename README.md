@@ -4,10 +4,11 @@ This repo is an investigation to an generalization of PCA called **Probabilistic
 ## - A short look at the PCPCA as dimension reduction tool
 
 <img align="right" src="./media/scattered_data.jpeg" width = "400">
-<img align="right" src="./media/pca_projection.jpg"  width = "400">
+
 
 PCA is a great tool to get a quick overview of your data at hand. However, in some situations, it will not give you what you are looking for. Let's say you have the data in the top figure to the right, and that we want to perform a dimension reduction down to one dimension. Here the *Case* and *Control* classes could stand for men and woman, sick and healty, or control group and case group. The PCA will find the direction of greatest variation and project down the data points onto that axis. Since the direction of greatest variance is clearly diagonally from the bottom left up to the top right, while the difference between the classes are in the orthogonal direction, PCA will not meaningfully be able to seperate the classes in its 1D-projection. The figure below shows the axis computed by PCA and the histogram over the corresponding projection.
 
+<img align="right" src="./media/pca_projection.jpg"  width = "400">
 
 So PCA might not be a *one-fits-all* sollution, but we still need a way to tackle this issue. Without opening the can of worms named **non-linear**, we could first see if there exist a reasonable linear transform. The gif below shows how the distribution of the two classes varies on the projection axis as the axis is rotated. Not too suprisingly, there seem to be a projection which seperates the two classes at around 135 degrees (when the line is going from top left to bottom right).  
 
