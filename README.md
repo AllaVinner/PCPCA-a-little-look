@@ -1,8 +1,10 @@
 # Project to seperate
 ## - A short look at the PCPCA dimension reduction tool
 
-PCA is a great tool for dimension reduction, but there are situations where it dosen't quit do the trick. 
 <img align="right" src="./media/scattered_data.jpeg">
+<img align="right" src="./media/pca_projection.jpg">
+PCA is a great tool for dimension reduction, but there are situations where it dosen't quit do the trick. 
+
 Withouth opening the can of worms that are named *non-linear*, we have the scenario where we want to distinguise two set of groups wehre the variance between the groups are orthogonal to the variance in the overall population (we will see what that means in a secound). The paper [] introduces a linear method called PCPCA which deals with just this case, and this is what this repository will investigate.
 
 ## The data
