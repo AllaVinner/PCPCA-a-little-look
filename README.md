@@ -22,7 +22,7 @@ The general objective of PCA is to find the direction in the data which correspo
 We now have an equation which is very similar to our original one but which contrasts the different kinds of data we have against eachother. The method it results in is called Contrastiv PCA (CPCA). 
 
 CPCA is a very successful method but it lacks some of the theoretical structure which we would like to have in our model. I will not go into it now, maybe I will come back and finish this work, but a good source is to look into the original paper (PCPCA) or search for probibalistic PCA (it is the first P in PCPCA). Putting all of this together finally leads to our final model. Implementing it on our data and varying gamma gives the results below. It is not perfect, but is getting us closer at least. 
-
-<img src="./media/pca_and_pcpca_projections.jpeg " width="1000">
-
+<p align = 'center'>
+<img src="./media/pca_and_pcpca_projections.jpeg " width="1100">
+<\p>
 
