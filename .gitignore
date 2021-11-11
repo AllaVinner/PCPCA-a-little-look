@@ -5,7 +5,6 @@ cached_models/
 .DS_Store
 
 # Data
-*.ipynb
 *.npy
 *.csv
 *.log
