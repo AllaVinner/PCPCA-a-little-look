@@ -1,20 +1,18 @@
 # Project to seperate
 ## - A short look at the PCPCA dimension reduction tool
 
-<img align="right" src="./media/scattered_data.jpeg">
-<img align="right" src="./media/pca_projection.jpg">
-PCA is a great tool for dimension reduction, but there are situations where it dosen't quit do the trick. 
+<img align="right" src="./media/scattered_data.jpeg" width = "400">
 
-Withouth opening the can of worms that are named *non-linear*, we have the scenario where we want to distinguise two set of groups wehre the variance between the groups are orthogonal to the variance in the overall population (we will see what that means in a secound). The paper [] introduces a linear method called PCPCA which deals with just this case, and this is what this repository will investigate.
+<img align="right" src="./media/pca_projection.jpg"  width = "400">
+PCA is a great tool to get a quick overview of your data at hand. However, in some situations, it will not give you what you are looking for. Let's say you have the data in the top figure to the right, and that we want to perform a dimension reduction down to one dimension. Here the *Case* and *Control* classes could stand for men and woman, sick and healty, or control group and case group. The PCA will find the direction of greatest variation and project down the data points onto that axis. Since the direction of greatest variance is clearly diagonally from the bottom left up to the top right, while the difference between the classes are in the orthogonal direction, PCA will not meaningfully be able to seperate the classes in its 1D-projection. The figure below shows the axis computed by PCA and the histogram over the corresponding projection.
+
+
+So PCA might not be a *one-fits-all* sollution, but we still need a way to tackle this issue. Without opening the can of worms named **non-linear**, we could first see if there is a reasonable linear transform. The gif below shows how the distribution of the two classes varies on the projection axis as the axis is rotated. Not too suprisingly, there seem to be a projection which seperates the two classes at around 135 degrees (when the line is going from top left to bottom right).  
+
+<img src="./media/rotating_projection.gif" width="1000">
 
 ## The data
 The group mentioned above can be any formed by any cathegorical field e.g. man vs woman, sick vs healthy, or control group vs case group; below I will refere to the groups as *case* and *control*. Then with had the thing about difference in variance. Actually it is not the difference in variance, but difference in the **direction** of the variances. Look at the data below. The overall variation of the data is along an axis going (roughfly) from the bottom left corner to the top right one, however, the difference between the two groups seem to be better explained by the other axis (from top left to bottom right).
-
-
-<p align="center">
-  <img src="./media/scattered_data.jpeg" width="500">
-</p>
-
 
 Performing a simple 
 
