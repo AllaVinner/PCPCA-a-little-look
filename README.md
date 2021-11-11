@@ -18,11 +18,10 @@ The group mentioned above can be any formed by any cathegorical field e.g. man v
 
 Performing a simple 
 
+<img src="./media/rotating_projection.gif" width="1000">
 
-<p align="center">
-  <img src="./media/rotating_projection.gif" width="1000">
-</p>
 
+<img src="./media/pca_and_pcpca_projections.gif" width="1000">
 
 
 
