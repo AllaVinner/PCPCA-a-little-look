@@ -21,7 +21,7 @@ Performing a simple
 <img src="./media/rotating_projection.gif" width="1000">
 
 
-<img src="./media/pca_and_pcpca_projections.gif" width="1000">
+<img src="./media/pca_and_pcpca_projections.jpeg " width="1000">
 
 
 
